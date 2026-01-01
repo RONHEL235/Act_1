@@ -35,8 +35,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '16px 32px',
-    borderBottom: '1px solid #ddd',
+    padding: '20px 32px',
+    borderBottom: '1px solid #eaeaea',
   },
   logo: {
     margin: 0,
@@ -44,13 +44,13 @@ const styles = {
   ul: {
     listStyle: 'none',
     display: 'flex',
-    gap: '20px',
+    gap: '24px',
     margin: 0,
     padding: 0,
   },
   link: {
     textDecoration: 'none',
-    color: '#333',
+    color: '#000',
     fontWeight: 500,
   },
 }

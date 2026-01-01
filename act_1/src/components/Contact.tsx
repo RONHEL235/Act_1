@@ -1,8 +1,12 @@
-function Contact() {
+type ContactProps = {
+  email: string
+}
+
+function Contact({ email }: ContactProps) {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <p>You can reach me via email or LinkedIn.</p>
+      <p>You can reach me at {email}</p>
     </section>
   )
 }

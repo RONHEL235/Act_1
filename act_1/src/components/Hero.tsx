@@ -1,10 +1,13 @@
-function Hero() {
+type HeroProps = {
+  name: string
+  role: string
+}
+
+function Hero({ name, role }: HeroProps) {
   return (
     <section id="home">
-      <h1>Hi, I’m Ronee 👋</h1>
-      <p>
-        I’m a Philosopher, Writer and Software Engineering student passionate about building.
-      </p>
+      <h1>Hi, I’m {name} 👋</h1>
+      <p>{role}</p>
     </section>
   )
 }

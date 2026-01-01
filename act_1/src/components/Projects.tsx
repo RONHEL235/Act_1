@@ -1,20 +1,13 @@
-type Project = {
+export type Project = {
   title: string
   description: string
 }
 
-const projects: Project[] = [
-  {
-    title: 'Portfolio Website',
-    description: 'My personal portfolio built with React and TypeScript.',
-  },
-  {
-    title: 'Student Management System',
-    description: 'A small system built to manage student records.',
-  },
-]
+type ProjectsProps = {
+  projects: Project[]
+}
 
-function Projects() {
+function Projects({ projects }: ProjectsProps) {
   return (
     <section id="projects">
       <h2>Projects</h2>

@@ -1,10 +1,12 @@
-function About() {
+type AboutProps = {
+  description: string
+}
+
+function About({ description }: AboutProps) {
   return (
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I love learning.
-      </p>
+      <p>{description}</p>
     </section>
   )
 }
