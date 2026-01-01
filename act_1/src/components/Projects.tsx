@@ -1,7 +1,4 @@
-export type Project = {
-  title: string
-  description: string
-}
+import type { Project } from '../data/siteData'
 
 type ProjectsProps = {
   projects: Project[]
