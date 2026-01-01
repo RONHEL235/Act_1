@@ -4,9 +4,17 @@ type ContactProps = {
 
 function Contact({ email }: ContactProps) {
   return (
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at {email}</p>
+    <section id="contact" className="space-y-4">
+        <h2 className="text-2xl font-semibold">Contact</h2>
+        <p className="text-gray-700">
+            You can reach me at{' '}
+            <a
+            href={`mailto:${email}`}
+            className="underline"
+            >
+            {email}
+            </a>
+        </p>
     </section>
   )
 }

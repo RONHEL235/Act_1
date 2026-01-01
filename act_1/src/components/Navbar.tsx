@@ -12,14 +12,17 @@ const navItems: NavItem[] = [
 
 function Navbar() {
   return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>Ronee</h2>
+    <nav className="flex items-center justify-between px-8 py-5 border-b">
+      <h2 className="text-xl font-semibold">Ronee</h2>
 
-      <ul style={styles.ul}>
+      <ul className="flex gap-6">
         {navItems.map((item) => (
           <li key={item.label}>
-            <a href={item.href} style={styles.link}>
-              {item.label}
+            <a
+              href={item.href}
+              className="text-gray-700 hover:text-black transition-colors"
+            >
+            {item.label}  
             </a>
           </li>
         ))}
@@ -29,28 +32,3 @@ function Navbar() {
 }
 
 export default Navbar
-
-const styles = {
-  nav: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '20px 32px',
-    borderBottom: '1px solid #eaeaea',
-  },
-  logo: {
-    margin: 0,
-  },
-  ul: {
-    listStyle: 'none',
-    display: 'flex',
-    gap: '24px',
-    margin: 0,
-    padding: 0,
-  },
-  link: {
-    textDecoration: 'none',
-    color: '#000',
-    fontWeight: 500,
-  },
-}

@@ -27,3 +27,19 @@ export const projectsData: Project[] = [
 export const contactData = {
   email: 'ronnee@example.com',
 }
+
+export type Skill = {
+  name: string
+  level?: string // optional, e.g., "Intermediate" or "Advanced"
+}
+
+export const skillsData: Skill[] = [
+  { name: 'HTML' },
+  { name: 'CSS' },
+  { name: 'JavaScript' },
+  { name: 'TypeScript' },
+  { name: 'React' },
+  { name: 'Node.js' },
+  { name: 'Git' },
+  { name: 'SQL' },
+]

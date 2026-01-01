@@ -6,17 +6,20 @@ type ProjectsProps = {
 
 function Projects({ projects }: ProjectsProps) {
   return (
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" className="space-y-6">
+        <h2 className="text-2xl font-semibold">Projects</h2>
 
-      <ul>
-        {projects.map((project) => (
-          <li key={project.title}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </li>
-        ))}
-      </ul>
+        <ul className="space-y-4">
+            {projects.map((project) => (
+            <li
+                key={project.title}
+                className="p-4 border rounded-lg"
+            >
+                <h3 className="font-medium">{project.title}</h3>
+                <p className="text-gray-600">{project.description}</p>
+            </li>
+            ))}
+        </ul>
     </section>
   )
 }
