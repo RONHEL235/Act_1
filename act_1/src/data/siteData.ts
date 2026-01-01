@@ -1,11 +1,11 @@
 export const heroData = {
-  name: 'Ronee',
+  name: 'Ronee Helepi',
   role: 'Software Engineering student passionate about building modern web applications.',
 }
 
 export const aboutData = {
   description:
-    'I am a BSc IT Software Engineering student who enjoys learning new technologies and building practical projects.',
+    'Student [Forever], Writer, Philosopher and Software Developer.',
 }
 
 export type Project = {
@@ -22,15 +22,23 @@ export const projectsData: Project[] = [
     title: 'Student Management System',
     description: 'A small system built to manage student records.',
   },
+  {
+    title: 'Student Management System',
+    description: 'A small system built to manage student records.',
+  },
+  {
+    title: 'Student Management System',
+    description: 'A small system built to manage student records.',
+  },
+  {
+    title: 'Student Management System',
+    description: 'A small system built to manage student records.',
+  }
 ]
-
-export const contactData = {
-  email: 'ronnee@example.com',
-}
 
 export type Skill = {
   name: string
-  level?: string // optional, e.g., "Intermediate" or "Advanced"
+  level?: string 
 }
 
 export const skillsData: Skill[] = [
@@ -67,3 +75,7 @@ export const blogData: BlogPost[] = [
     link: '#',
   },
 ]
+
+export const contactData = {
+  email: 'roneehelepi70@gmail.com',
+}
