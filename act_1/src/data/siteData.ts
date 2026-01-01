@@ -43,3 +43,27 @@ export const skillsData: Skill[] = [
   { name: 'Git' },
   { name: 'SQL' },
 ]
+
+export type BlogPost = {
+  title: string
+  excerpt: string
+  link?: string
+}
+
+export const blogData: BlogPost[] = [
+  {
+    title: 'Learning React with TypeScript',
+    excerpt: 'A guide I wrote while building my portfolio using React and TypeScript.',
+    link: '#',
+  },
+  {
+    title: 'Deploying a Portfolio on Vercel',
+    excerpt: 'Step-by-step tutorial on how to deploy a React project online.',
+    link: '#',
+  },
+  {
+    title: 'Why Type Safety Matters',
+    excerpt: 'Thoughts on using TypeScript to avoid runtime errors in web projects.',
+    link: '#',
+  },
+]

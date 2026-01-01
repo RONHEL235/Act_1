@@ -6,6 +6,9 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Skills from './components/Skills'
 import { skillsData } from './data/siteData'
+import Blog from './components/Blog'
+import { blogData } from './data/siteData'
+
 
 
 import {
@@ -24,6 +27,7 @@ function App() {
         <About description={aboutData.description} />
         <Skills skills={skillsData} />
         <Projects projects={projectsData} />
+        <Blog posts={blogData} />
         <Contact email={contactData.email} />
       </main>
       <Footer />
